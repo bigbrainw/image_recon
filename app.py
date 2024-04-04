@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/detr-resnet-50"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer "}
 
 def query_huggingface_api(image_data):
     response = requests.post(API_URL, headers=headers, data=image_data)
